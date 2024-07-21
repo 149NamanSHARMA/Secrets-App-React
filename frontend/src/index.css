@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Carme';
+    src: url(../public/fonts/Carme.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Carme', sans-serif;
+  }
+
+/* Custom Colors */
+.bg-darkblue {
+  background-color: #1a202c;
+}
+
+.text-lightgray {
+  color: #cbd5e0;
+}
+
+.bg-primary {
+  background-color: #2d3748;
+}
+
+.bg-accent {
+  background-color: #38b2ac;
+}
+
+.text-accent {
+  color: #38b2ac;
+}
+
+.text-secondary {
+  color: #a0aec0;
+}
+
+.btn-primary {
+  background-color: #2b6cb0;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #e53e3e;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #2c5282;
+}
+
+.btn-secondary:hover {
+  background-color: #c53030;
+}
