@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // CORS middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // Change this to your frontend URL
+  origin: process.env.FRONTEND_URL, 
   credentials: true
 }));
 
