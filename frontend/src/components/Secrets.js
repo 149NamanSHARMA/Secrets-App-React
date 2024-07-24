@@ -7,8 +7,10 @@ const Secrets = () => {
 
   useEffect(() => {
     const fetchSecrets = async () => {
+      console.log('Fetching secrets...');
       try {
         const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/secrets`, { withCredentials: true });
+        console.log('Fetched secrets:', response.data);
         setSecrets(response.data);
       } catch (error) {
         console.error('Error fetching secrets:', error.response ? error.response.data : error.message);

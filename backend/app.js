@@ -25,7 +25,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
-  cookie: { secure: true } // Set to true if using https
+  cookie: { secure: false, httpOnly: true, sameSite: 'Lax' } 
 }));
 
 // Passport middleware
